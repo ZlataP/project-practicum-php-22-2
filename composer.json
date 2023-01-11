@@ -1,0 +1,10 @@
+{
+    "name": "tgu/perminova",
+    "autoload": {
+        "psr-4": {
+            "Tgu\\Perminova\\": "src/"
+        }
+    },
+
+    "require": {}
+}
