@@ -3,17 +3,26 @@
 namespace Tgu\Perminova\Person;
 
 class Name{
+    private $firstName;
+    private $lastName;
+
     public function __construct(
-        private int $idUser,
-        private string $firstName,
-        private string $lastName,
+        string $firstName,
+        string $lastName
+    )
+    {
+        $this->lastName = $lastName;
+        $this->firstName = $firstName;
 
-)
-{
-
-}
+    }
     public function __toString(): string
     {
-        return $this->idUser . ' ' .$this->firstName . ' ' . $this->lastName;
+        return $this->firstName . ' - Имя, ' . $this->lastName . ' - Фамилия';
+    }
+    public function getFirstName():string{
+        return $this->firstName;
+    }
+    public function getLastName():string{
+        return $this->lastName;
     }
 }

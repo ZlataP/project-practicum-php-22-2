@@ -1,7 +1,7 @@
 <?php
 require_once  __DIR__ . '/vendor/autoload.php';
 
-use Tgu\Perminova\Blog\Comments;
+/* use Tgu\Perminova\Blog\Comments;
 use Tgu\Perminova\Blog\Post;
 use Tgu\Perminova\Person\Name;
 
@@ -25,4 +25,4 @@ $comment = new Comments(1, $user->id, $post->id, 'комментарий');
 
 print $user;
 print $post;
-print $comment;
+print $comment; */
