@@ -9,7 +9,6 @@ use Tgu\Perminova\Exceptions\CommentNotFoundException;
 class InMemoryCommentsRepository implements CommentsRepositoryInterface
 {
     private array $comments = [];
-
     public function saveComment(Comments $comment):void{
         $this->comments[] = $comment;
     }
